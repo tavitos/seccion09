@@ -20,6 +20,7 @@
                 {{ country.capital }} - {{ country.population }}
             </li>
         </ul> -->
+        <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
         <countries-table [countries]="countries"></countries-table>
     </div>
 </div>
